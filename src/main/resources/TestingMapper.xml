@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.edw.springmybatis.mapper.TestingMapper" >
+  
+    <select id="insert" parameterType="com.edw.springmybatis.bean.Testing" >
+        insert into testing (name, address)
+        values ( #{name,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR} )
+    </select> 
+  
+</mapper>
